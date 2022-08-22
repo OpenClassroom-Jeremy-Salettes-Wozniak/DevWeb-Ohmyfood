@@ -1,0 +1,50 @@
+// TODO: SPINNER
+/* Bloc Général*/
+.spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: map-get($colors, color--background);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	/* image Ohmyfood */
+	&__img {
+		margin: 55% auto 50% 15%;
+		width: 90%;
+		position: absolute;
+	}
+}
+
+// TODO: SPINNER ANIMATION
+/*  Position Anneau de l'animation */
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 160px;
+	height: 260px;
+}
+
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	border: 7px solid;
+	border-radius: 50%;
+	animation: lds-ring 2.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: transparent black transparent black;
+	animation-delay: -0s;
+}
+
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

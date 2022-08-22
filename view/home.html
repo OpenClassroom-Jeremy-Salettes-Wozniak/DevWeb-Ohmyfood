@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="author" content="Jérémy Salettes-Wozniak" />
+		<meta name="description" content="document type" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Ohmyfood</title>
+
+		<link rel="preload" href="../public/style/output.css" as="style" />
+		<link rel="stylesheet" type="text/css" href="../public/style/output.css" />
+
+		<!-- Font Awesome SVG https://fontawesome.com/v4.7.0/  -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+			integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="icon" href="../public/image/logo/favicon.svg" />
+	</head>
+	<body>
+		<!-- TODO: INDEX-HEADER -->
+		<header>
+			<div class="bloc-header">
+				<img
+					class="bloc-header__img"
+					alt="ohmyfood"
+					src="../public/image/logo/ohmyfood.png"
+				/>
+				<div class="bloc-header__loc">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Paris, Belleville</span>
+				</div>
+			</div>
+		</header>
+		<!-- Permet le positionnement en mode desktop -->
+		<div class="desktop">
+			<div class="bloc-header__pres">
+				<h1 class="bloc-header__title">Réservez le menu qui vous convient</h1>
+				<h2 class="bloc-header__p">
+					Découvrez des restaurants d'exception, séléctionnés par nos soins.
+				</h2>
+				<button class="bloc-header__btn" type="button" name="button">
+					Explorer nos restaurants
+				</button>
+			</div>
+
+			<!-- TODO: INDEX-SECTION__EXPLICATION -->
+			<div class="bloc-expl">
+				<h3 class="bloc-expl__title">Fonctionnement</h3>
+				<ol>
+					<li>
+						<i class="fas fa-mobile-alt"></i>
+						<span class="bloc-expl__span1">Choisissez un restaurant</span>
+					</li>
+					<li>
+						<i class="fas fa-list"></i>
+						<span class="bloc-expl__span2">Composez votre menu</span>
+					</li>
+					<li>
+						<i class="fas fa-store"></i>
+						<span class="bloc-expl__span3">Dégustez au restaurant</span>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<section>
+			<!-- TODO: INDEX-SECTION__CARD -->
+			<div class="bloc-card">
+				<h3 class="bloc-card__title">Restaurants</h3>
+
+				<!-- TODO: card_palette -->
+				<a class="bloc-card__card" href="./palette.html">
+					<figure class="bloc-card__figure">
+						<div class="bloc-card__new">Nouveau</div>
+						<img
+							class="bloc-card__img"
+							src="../public/image/restaurants/palette.jpg"
+							alt="La palette du goût"
+						/>
+						<figcaption class="bloc-card__figcaption">
+							<div class="bloc-card__restaurant">
+								<h4 class="bloc-card__h4">La palette du goût</h4>
+								<p class="bloc-card__city">Ménilmontant</p>
+							</div>
+							<div class="bloc-card__heart">
+								<i class="far fa-heart"></i>
+								<i class="fas fa-heart fa-heart--hover"></i>
+							</div>
+						</figcaption>
+					</figure>
+				</a>
+
+				<!-- TODO: card_enchantée -->
+				<a class="bloc-card__card" href="./enchantée.html">
+					<figure class="bloc-card__figure">
+						<div class="bloc-card__new">Nouveau</div>
+						<img
+							class="bloc-card__img bloc-card__img2"
+							src="../public/image/restaurants/enchante.jpg"
+							alt="La note enchantée"
+						/>
+						<figcaption class="bloc-card__figcaption">
+							<div class="bloc-card__restaurant">
+								<h4 class="bloc-card__h4">La note enchantée</h4>
+								<p class="bloc-card__city">Charonne</p>
+							</div>
+							<div class="bloc-card__heart">
+								<i class="far fa-heart"></i>
+								<i class="fas fa-heart fa-heart--hover"></i>
+							</div>
+						</figcaption>
+					</figure>
+				</a>
+
+				<!-- TODO: card_française -->
+				<a class="bloc-card__card" href="./francaise.html">
+					<figure class="bloc-card__figure">
+						<img
+							class="bloc-card__img"
+							src="../public/image/restaurants/française.jpg"
+							alt="À la française"
+						/>
+						<figcaption class="bloc-card__figcaption">
+							<div class="bloc-card__restaurant">
+								<h4 class="bloc-card__h4">A la française</h4>
+								<p class="bloc-card__city">Cité Rouge</p>
+							</div>
+							<div class="bloc-card__heart">
+								<i class="far fa-heart"></i>
+								<i class="fas fa-heart fa-heart--hover"></i>
+							</div>
+						</figcaption>
+					</figure>
+				</a>
+
+				<!-- TODO: card_délice -->
+				<a class="bloc-card__card" href="./délice.html">
+					<figure class="bloc-card__figure">
+						<img
+							class="bloc-card__img"
+							src="../public/image/restaurants/delice.jpg"
+							alt="Le délice des sens"
+						/>
+						<figcaption class="bloc-card__figcaption">
+							<div class="bloc-card__restaurant">
+								<h4 class="bloc-card__h4">Le délice des sens</h4>
+								<p class="bloc-card__city">Folie-Méricourt</p>
+							</div>
+							<div class="bloc-card__heart">
+								<i class="far fa-heart"></i>
+								<i class="fas fa-heart fa-heart--hover"></i>
+							</div>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</section>
+
+		<!-- TODO: footer -->
+		<footer>
+			<div class="bloc-footer">
+				<span class="bloc-footer__span">ohmyfood</span>
+				<ul>
+					<li class="bloc-footer__li">
+						<i class="fas fa-utensils bloc-footer__fa-utensils"></i>
+						<p>Proposer un restaurants</p>
+					</li>
+					<li class="bloc-footer__li">
+						<i class="fas fa-hands-helping bloc-footer__fa-hands-helping"></i>
+						<p>Devenir partenaire</p>
+					</li>
+					<li class="bloc-footer__li">
+						<p>Mention légale</p>
+					</li>
+					<li class="bloc-footer__li">
+						<a href="mailto:chose@bidule.fr">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

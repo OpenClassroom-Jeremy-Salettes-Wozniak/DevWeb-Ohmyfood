@@ -1,0 +1,112 @@
+// TODO: HEADER__MENU-lOGO
+.bloc-logo {
+	padding-top: 4%;
+	padding-bottom: 2%;
+	display: flex;
+	align-items: center;
+
+	&__logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__logo img {
+		position: relative;
+		width: 45%;
+	}
+
+	a {
+		color: black;
+	}
+
+	.fa-arrow-left {
+		font-size: 1.2rem;
+		position: relative;
+		left: 1.5rem;
+	}
+}
+
+// TODO: HEADER__MENU--PRESENTATION
+.bloc-title {
+	background-color: map-get($colors, color--background);
+	width: 100%;
+
+	&__img {
+		object-fit: cover;
+		width: 100%;
+	}
+
+	/* Permet de décalé le bloc pour faire passer l'image dessous */
+	&__txt {
+		transform: translate(0%, -50%);
+		background-color: map-get($colors, color--background);
+		padding-top: 5%;
+		width: auto;
+		border-radius: 1rem 1rem 0rem 0rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 0.2rem map-get($colors, color--background) solid;
+	}
+
+	&__h1 {
+		margin-left: 3%;
+	}
+
+	// TODO: ANIMATION-HEART
+	.fa-heart {
+		right: 1%;
+		margin-right: 8%;
+		font-size: 1.4rem;
+		position: absolute;
+	}
+
+	.fa-heart:hover {
+		transition: all 1s;
+	}
+
+	.fa-heart--hover {
+		background: linear-gradient(
+			0deg,
+			rgba(225, 121, 218, 0.958420868347339) 20%,
+			rgba(167, 92, 220, 1) 69%
+		);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		opacity: 0;
+	}
+
+	.fa-heart--hover:hover {
+		opacity: 1;
+		position: absolute;
+	}
+}
+
+@media screen and(min-width: 500px) and (max-width: 999px) {
+	.bloc-title {
+		&__img {
+			height: 20rem;
+		}
+	}
+	.bloc-logo {
+		&__logo {
+			height: 20%;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.bloc-logo {
+		&__logo {
+			width: 100%;
+		}
+		.fa-arrow-left {
+			font-size: 3rem;
+			left: 5rem;
+		}
+	}
+	.bloc-title__img {
+		height: 30rem;
+	}
+}

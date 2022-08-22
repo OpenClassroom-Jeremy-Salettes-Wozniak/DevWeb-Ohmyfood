@@ -1,0 +1,17 @@
+{
+	"name": "style",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"autoprefixer": "^10.2.5",
+		"postcss-cli": "^8.3.1",
+		"sass": "^1.32.10"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"sass": "sass --watch input.scss output.css"
+	},
+	"author": "",
+	"license": "ISC"
+}

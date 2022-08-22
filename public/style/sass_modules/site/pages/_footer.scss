@@ -1,0 +1,45 @@
+// TODO: FOOTER
+.bloc-footer {
+	background-color: map-get($colors, color--black);
+	color: map-get($colors, color--white);
+
+	padding-top: 4%;
+	padding-left: 6.5%;
+	padding-bottom: 8%;
+
+	&__fa-utensils {
+		font-size: 0.75rem;
+		padding-right: 3%;
+	}
+
+	&__fa-hands-helping {
+		font-size: 0.7rem;
+		padding-right: 2.4%;
+	}
+
+	&__li {
+		margin-top: 3%;
+		display: flex;
+		align-items: center;
+	}
+
+	a {
+		text-decoration: none;
+		color: map-get($colors, color--white);
+	}
+}
+
+@media screen and(min-width: 500px) {
+	.bloc-footer {
+		padding: 3%;
+		text-align: center;
+		ul {
+			display: flex;
+		}
+		ul > li {
+			display: flex;
+			justify-content: center;
+			width: 30%;
+		}
+	}
+}
